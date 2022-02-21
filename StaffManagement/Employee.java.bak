@@ -1,0 +1,12 @@
+public class Employee
+{
+	public static void main(String[] args)
+	{
+		
+		String firstName = "First Name";
+		String lastName = "Last Name";
+		int age;
+		double monthlySalary;
+		
+	}
+}
