@@ -1,0 +1,35 @@
+import java.util.Scanner;
+
+public class EntryPoint{
+	public static void main(String[] args){
+		
+		Scanner scan = new Scanner(System.in);
+	
+		System.out.println("Which service would you like to use?");
+		System.out.println("[1]: Basic week visualizer");
+		System.out.println("[2]: Advanced week visualizer");
+		System.out.println("[3]: Basic calculator");
+		System.out.println("[4]: Employee repertoire");
+		
+		int input = scan.nextInt();
+		
+		switch(input) {
+		case 1:
+			BasicWeek basicWeek = new BasicWeek();
+			basicWeek.printBasicDays();
+			break;
+		case 2:
+			AdvancedWeek advancedWeek = new AdvancedWeek();
+			advancedWeek.printDays();
+			break;
+		case 3:
+			Calculator calc = new Calculator();
+			break;
+		case 4:
+			Employee emp = new Employee();
+			System.out.println("Employee information: " + emp.toString());
+		}
+	}
+}
+		
+		
